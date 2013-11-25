@@ -1,0 +1,15 @@
+ext {
+    springVersion = '3.2.5.RELEASE'
+}
+
+dependencies {
+    compile("org.springframework:spring-jms:$springVersion",
+            'org.apache.activemq:activemq-core:5.4.0'
+    )
+
+    testCompile(
+            'junit:junit:4.11',
+            "org.springframework:spring-test:$springVersion",
+            'org.apache.activemq:activemq-pool:5.4.0'
+    )
+}
