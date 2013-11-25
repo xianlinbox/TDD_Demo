@@ -19,5 +19,6 @@ build/
 out/
 
 # Gradle
-.gradle 
+.gradle/
+activemq-data/* 
 
