@@ -1,10 +1,17 @@
 allprojects {
     apply plugin: 'idea'
-    apply plugin: 'java'
-
 
     repositories {
         mavenCentral()
     }
+}
 
+subprojects {
+    apply plugin: 'java'
+
+    dependencies {
+        testCompile(
+                'junit:junit:4.10'
+        )
+    }
 }
