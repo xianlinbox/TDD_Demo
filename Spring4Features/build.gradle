@@ -10,11 +10,7 @@ dependencies {
             "org.springframework:spring-core:$springVersion",
             "org.springframework:spring-web:$springVersion",
             "org.springframework:spring-webmvc:$springVersion",
-            "org.springframework.security:spring-security-core:$springSecurityVersion",
-            "org.springframework.security:spring-security-web:$springSecurityVersion",
-            "org.springframework.security:spring-security-config:$springSecurityVersion",
-            "org.codehaus.jackson:jackson-mapper-asl:1.9.12",
-            'net.sf.dozer:dozer:5.4.0'
+            "org.codehaus.jackson:jackson-mapper-asl:1.9.12"
     )
 
     testCompile(

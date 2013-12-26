@@ -1,2 +1,2 @@
 rootProject.name = 'TDD_demo'
-include 'JMS', 'Spring_WS', 'spring-ws-rest'
+include 'JMS', 'Spring_WS', 'spring-ws-rest','Spring4Features'

@@ -1,24 +1,21 @@
 apply plugin: 'war'
 
 ext {
-    springVersion = '3.2.2.RELEASE'
-    springSecurityVersion = '3.1.4.RELEASE'
+    springVersion = '4.0.0.RELEASE'
 }
 
 dependencies {
     compile(
-            "org.springframework:spring-core:$springVersion",
-            "org.springframework:spring-web:$springVersion",
             "org.springframework:spring-webmvc:$springVersion",
-            "org.springframework.security:spring-security-core:$springSecurityVersion",
-            "org.springframework.security:spring-security-web:$springSecurityVersion",
-            "org.springframework.security:spring-security-config:$springSecurityVersion",
-            "org.codehaus.jackson:jackson-mapper-asl:1.9.12"
+            "org.hibernate:hibernate-validator:5.0.2.Final",
+            "javax.el:javax.el-api:3.0.0",
+            'org.glassfish.web:el-impl:2.2',
+            "org.codehaus.jackson:jackson-mapper-asl:1.9.12",
+            'joda-time:joda-time:2.3'
     )
 
     testCompile(
             "org.springframework:spring-test:$springVersion",
-            "org.springframework.ws:spring-ws-test:2.1.0.RELEASE",
             "javax.servlet:javax.servlet-api:3.0.1",
             "com.jayway.jsonpath:json-path-assert:0.9.0"
     )
