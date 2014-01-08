@@ -4,12 +4,15 @@ ext {
 
 dependencies {
     compile("org.springframework:spring-jms:$springVersion",
-            'org.apache.activemq:activemq-core:5.4.0'
+            'org.springframework:spring-context-support:4.0.0.RELEASE',
+            'org.apache.activemq:activemq-core:5.4.0',
+            'javax.mail:mail:1.4'
     )
 
     testCompile(
             'junit:junit:4.11',
             "org.springframework:spring-test:$springVersion",
-            'org.apache.activemq:activemq-pool:5.4.0'
+            'org.apache.activemq:activemq-pool:5.4.0',
+            'com.icegreen:greenmail:1.3'
     )
 }
